@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tekton-app
+  name: tekton-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tekton-app
+  template:
+    metadata:
+      labels:
+        app: tekton-app
+    spec:
+      containers:
+        - image: image-registry.openshift-image-registry.svc:5000/dev-oy/tekton-app:latest
+          imagePullPolicy: Always
+          name: tekton-app
+          ports:
+            - containerPort: 8080
+              protocol: TCP

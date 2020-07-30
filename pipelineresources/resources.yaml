@@ -7,14 +7,14 @@ spec:
   type: git
   params:
   - name: url
-    value: 
+    value: https://github.com/orhanIBM/tekton-demo.git
 ---
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
 metadata:
-  name: api-image
+  name: app-image
 spec:
   type: image
   params:
   - name: url
-    value: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/vote-api:latest
+    value: image-registry.openshift-image-registry.svc:5000/dev-oy/tekton-demo:latest
