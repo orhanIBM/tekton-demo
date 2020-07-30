@@ -2,12 +2,12 @@
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
 metadata:
-  name: api-repo
+  name: app-repo
 spec:
   type: git
   params:
   - name: url
-    value: http://github.com/openshift-pipelines/vote-api.git
+    value: 
 ---
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
