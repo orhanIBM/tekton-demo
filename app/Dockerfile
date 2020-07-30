@@ -16,6 +16,6 @@ RUN npm install
 COPY . .
 
 EXPOSE 8080
-CMD [ "node", "server.js" ]
+CMD [ "node", "app.js" ]
 
 #source: https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
