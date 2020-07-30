@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "tekton-demo",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "tekton"
+  ],
+  "author": "orhan yarar",
+  "license": "ISC"
+}
